@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homebase — Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          sans-serif;
+        line-height: 1.6;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+        color: #1f2937;
+        background: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #e5e7eb;
+          background: #0b0f17;
+        }
+        a {
+          color: #8ab4ff;
+        }
+        code {
+          background: #1f2937;
+        }
+      }
+      h1 {
+        font-size: 32px;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 32px;
+      }
+      .updated {
+        color: #6b7280;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 4px;
+      }
+      .summary {
+        border-left: 3px solid #6366f1;
+        padding: 12px 16px;
+        background: rgba(99, 102, 241, 0.08);
+        border-radius: 6px;
+        margin: 16px 0 24px;
+      }
+      .summary strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Homebase — Privacy Policy</h1>
+    <p class="updated">Last updated: May 1, 2026</p>
+
+    <div class="summary">
+      <strong>In one sentence</strong>
+      Homebase does not collect, transmit, or sell your personal data — everything
+      stays on your device or in your Google account's sync storage.
+    </div>
+
+    <h2>1. What Homebase is</h2>
+    <p>
+      Homebase is a Chrome extension that replaces the new-tab page with a
+      customizable, widget-based dashboard (clock, calendar, todos, notes, quick
+      links, weather, news, etc.).
+    </p>
+
+    <h2>2. Data we collect</h2>
+    <p>
+      <strong>None.</strong> Homebase has no backend, no analytics, no telemetry,
+      and no third-party SDKs. We do not know who installs, uses, or uninstalls
+      the extension.
+    </p>
+
+    <h2>3. Data Homebase stores locally</h2>
+    <p>
+      Homebase uses Chrome's built-in storage APIs to save your preferences so
+      your dashboard looks the same every time you open a tab. This data lives
+      entirely on your device and, if you are signed in to Chrome, optionally
+      syncs to your own Google account via <code>chrome.storage.sync</code>. It is
+      never sent to us.
+    </p>
+    <p>Stored locally:</p>
+    <ul>
+      <li>Your chosen theme, layout, and widget sizes</li>
+      <li>Widget configuration (e.g., your selected city for Weather, your todo items, your notes)</li>
+      <li>Your name, if you entered one for the greeting</li>
+      <li>Cached API responses (weather, news, currency rates) to reduce network requests</li>
+    </ul>
+
+    <h2>4. Chrome permissions — how they're used</h2>
+    <ul>
+      <li>
+        <strong>storage</strong> — persist your settings locally and via
+        <code>chrome.storage.sync</code>.
+      </li>
+      <li>
+        <strong>history</strong> — read your recent browsing history to display
+        it inside the <em>Browser history</em> widget. Never transmitted
+        anywhere.
+      </li>
+      <li>
+        <strong>readingList</strong> — read your Chrome reading list to display
+        it inside the <em>Reading list</em> widget. Never transmitted anywhere.
+      </li>
+      <li>
+        <strong>downloads</strong> — list your recent downloads inside the
+        <em>Downloads</em> widget, and optionally clear the download history from
+        the widget. Never transmitted anywhere.
+      </li>
+      <li>
+        <strong>tabs</strong>, <strong>webNavigation</strong> — power the
+        optional "Managed homepage redirect" feature (disabled by default). When
+        enabled, navigations matching URL prefixes you configure are redirected
+        to this new-tab page. Nothing is logged or sent externally.
+      </li>
+    </ul>
+
+    <h2>5. Third-party APIs Homebase calls</h2>
+    <p>
+      Certain widgets fetch public data directly from your browser. No account or
+      API key is required, and Homebase has no server in between — your browser
+      talks directly to these services, which may record the request according
+      to their own privacy policies.
+    </p>
+    <ul>
+      <li><strong>Hacker News</strong> (<code>hacker-news.firebaseio.com</code>, <code>hn.algolia.com</code>) — News widget</li>
+      <li><strong>Reddit</strong> (<code>www.reddit.com</code>) — News widget</li>
+      <li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>, <code>air-quality-api.open-meteo.com</code>) — Weather, Air quality, World clocks (city search)</li>
+      <li><strong>Frankfurter</strong> (<code>api.frankfurter.app</code>) — Currency converter</li>
+      <li><strong>Dictionary API</strong> (<code>api.dictionaryapi.dev</code>) — Dictionary widget</li>
+      <li><strong>Google Favicons</strong> (<code>www.google.com/s2/favicons</code>) — small site icons for Quick Links and history entries</li>
+    </ul>
+    <p>
+      If you grant Homebase access to your geolocation (via the Weather or Air
+      quality widget), it is used only to fetch the current forecast for your
+      coordinates and is never stored off-device.
+    </p>
+
+    <h2>6. Data sharing</h2>
+    <p>
+      Homebase does not share, sell, transfer, or rent any data to anyone. We do
+      not operate any servers.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      Homebase is a general-purpose productivity tool and does not knowingly
+      collect data from anyone, including children under 13.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      If the behavior of Homebase changes in a way that affects privacy, this
+      page will be updated and the "Last updated" date above will be revised.
+      Significant changes will be noted in the extension's release notes.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Questions or requests? Open an issue on the project's repository or
+      contact the publisher via the Chrome Web Store listing.
+    </p>
+  </body>
+</html>

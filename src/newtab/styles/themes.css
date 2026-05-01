@@ -1,0 +1,101 @@
+/* Palette ported from Developer Dashboard (EasyCluster) */
+
+:root,
+html[data-theme='indigo'] {
+  color-scheme: dark;
+  --accent: #6366f1;
+  --accent-strong: #4f46e5;
+  --accent-hover: #818cf8;
+  --accent-text: #a5b4fc;
+  --accent-text-2: #c7d2fe;
+
+  --surface-950: #030712;
+  --surface-900: #111827;
+  --surface-800: #1f2937;
+  --surface-700: #374151;
+  --surface-600: #4b5563;
+  --surface-500: #6b7280;
+  --surface-400: #9ca3af;
+  --surface-300: #d1d5db;
+  --surface-200: #e5e7eb;
+  --surface-100: #f3f4f6;
+}
+
+html[data-theme='emerald'] {
+  color-scheme: dark;
+  --accent: #10b981;
+  --accent-strong: #059669;
+  --accent-hover: #34d399;
+  --accent-text: #6ee7b7;
+  --accent-text-2: #a7f3d0;
+
+  --surface-950: #04110d;
+  --surface-900: #0c1b17;
+  --surface-800: #152922;
+  --surface-700: #233d33;
+  --surface-600: #3a5a4c;
+  --surface-500: #617a6f;
+  --surface-400: #8ea99e;
+  --surface-300: #b4cfc4;
+  --surface-200: #d3e6dc;
+  --surface-100: #e9f3ee;
+}
+
+html[data-theme='amber'] {
+  color-scheme: dark;
+  --accent: #f59e0b;
+  --accent-strong: #d97706;
+  --accent-hover: #fbbf24;
+  --accent-text: #fcd34d;
+  --accent-text-2: #fde68a;
+
+  --surface-950: #120c04;
+  --surface-900: #1c130a;
+  --surface-800: #2c2014;
+  --surface-700: #433221;
+  --surface-600: #5f4834;
+  --surface-500: #81664c;
+  --surface-400: #a98a6c;
+  --surface-300: #c9b08f;
+  --surface-200: #dfccb0;
+  --surface-100: #f0e4ce;
+}
+
+html[data-theme='rose'] {
+  color-scheme: dark;
+  --accent: #f43f5e;
+  --accent-strong: #e11d48;
+  --accent-hover: #fb7185;
+  --accent-text: #fda4af;
+  --accent-text-2: #fecdd3;
+
+  --surface-950: #120810;
+  --surface-900: #1c0e17;
+  --surface-800: #2b1a24;
+  --surface-700: #412a37;
+  --surface-600: #5d4050;
+  --surface-500: #7e5a6d;
+  --surface-400: #a78497;
+  --surface-300: #c8afbc;
+  --surface-200: #dfcdd6;
+  --surface-100: #f0e4e9;
+}
+
+/* Map palette to app tokens used by widgets, shells, etc. */
+html {
+  --bg: var(--surface-950);
+  --surface: color-mix(in srgb, var(--surface-800) 50%, transparent);
+  --surface-strong: color-mix(in srgb, var(--surface-800) 80%, transparent);
+  --surface-solid: var(--surface-900);
+  --surface-solid-2: var(--surface-800);
+  --fg: var(--surface-100);
+  --fg-dim: var(--surface-400);
+  --fg-mute: var(--surface-500);
+  --border: var(--surface-800);
+  --border-strong: var(--surface-700);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+
+  --widget-pad: 18px;
+  --widget-radius: 14px;
+  --widget-gap: 16px;
+}

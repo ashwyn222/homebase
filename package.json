@@ -1,0 +1,31 @@
+{
+  "name": "homebase",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Homebase — a customizable widget-based new tab for Chrome.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "package": "npm run build && mkdir -p releases && cd dist && zip -r \"../releases/homebase-v$npm_package_version.zip\" . -x '*.DS_Store' -x '__MACOSX/*' && cd .. && echo \"Created releases/homebase-v$npm_package_version.zip\""
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.4.0",
+    "@types/chrome": "^0.1.40",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "cmdk": "^1.1.1",
+    "lucide-react": "^1.14.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-grid-layout": "^2.2.3",
+    "zustand": "^5.0.12"
+  }
+}

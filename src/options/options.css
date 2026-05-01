@@ -1,0 +1,141 @@
+.opt-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.opt-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.opt-header p {
+  color: var(--fg-dim);
+  font-size: 14px;
+}
+
+.opt-card {
+  background: var(--surface-solid);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opt-card.danger {
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.opt-card h2 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
+.opt-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opt-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.opt-row > span {
+  color: var(--fg-dim);
+  font-size: 12px;
+}
+
+.opt-row input[type='text'],
+.opt-row select,
+.opt-row textarea {
+  padding: 10px 12px;
+  background: var(--surface-solid-2);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: 0;
+}
+
+.opt-row input:focus,
+.opt-row select:focus,
+.opt-row textarea:focus {
+  border-color: var(--accent);
+}
+
+.opt-row textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.presets-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preset {
+  width: 60px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.15s ease;
+}
+
+.preset:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+.opt-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.danger-btn {
+  align-self: flex-start;
+  padding: 10px 16px;
+  background: transparent;
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.danger-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fee2e2;
+}
+
+.opt-status {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  background: var(--surface-solid);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  font-size: 13px;
+}
